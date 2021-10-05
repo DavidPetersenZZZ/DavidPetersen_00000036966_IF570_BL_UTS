@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.umn.david_36966">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.david_36966">
+        <activity
+            android:name="id.ac.umn.david_36966.ProfileActivity"
+            android:exported="true"
+            android:parentActivityName="id.ac.umn.david_36966.MainActivity"
+            android:allowTaskReparenting="true"/>
+        <activity
+            android:name="id.ac.umn.david_36966.LibraryDetailActivity"
+            android:exported="true"
+            android:parentActivityName="id.ac.umn.david_36966.LibraryActivity" />
+        <activity
+            android:name="id.ac.umn.david_36966.LibraryActivity"
+            android:exported="true" />
+        <activity
+            android:name="id.ac.umn.david_36966.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name="id.ac.umn.david_36966.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
